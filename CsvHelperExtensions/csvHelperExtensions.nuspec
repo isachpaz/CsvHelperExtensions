@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>csvHelperExtensionsGeneric</id>
+		<version>1.0.1</version>
+		<title>csvHelper Extensions</title>
+		<authors>Ilias Sachpazidis</authors>
+		<owners>Dr. Ilias Sachpazidis</owners>
+		<projectUrl>https://github.com/isachpaz/CsvHelperExtensions</projectUrl>
+		<license type="file">LICENSE.txt</license>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>csvHelper Extensions</description>
+		<releaseNotes>
+
+			csvHelperExtensions 1.0.1:
+			- DataRepositoryService generic implementation with ISpecification support
+        
+		</releaseNotes>
+		<copyright>Copyright 2020-2021 (c) Dr. Ilias Sachpazidis</copyright>
+		<tags></tags>
+
+		<dependencies>
+			<dependency id="CsvHelper" version="27.1.0" />
+			<dependency id="Vouzamo.Specification" version="1.1.3"/>
+
+		</dependencies>
+
+	</metadata>
+	<files>
+		<file src="bin\Release\*.dll" target="lib\net461"/>
+		<file src="LICENSE.txt" />
+	</files>
+
+</package>
