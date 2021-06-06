@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DataRepositoryServiceTests.cs" />
     <Compile Include="DataRepositoryServiceWithSpecsTests.cs" />
+    <Compile Include="WithFractionsLessOrEqualTo.cs" />
     <Compile Include="WithMaxFollowUpTimeSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.Designer.cs">
