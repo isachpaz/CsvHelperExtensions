@@ -1,0 +1,9 @@
+Patient Id,Study,FollowUpTime(Months),Fractions,TotalPhysicalDose(Gy),Local Control Probability
+1,high dose,12,1,30,0.88
+2,high dose,13,1,22,0.87
+3,high dose,14,1,28,0.86
+4,high dose,18,1,36,0.95
+5,high dose,25,1,24,0.78
+6,low dose,11,5,10,0.66
+7,low dose,7,6,12,0.67
+8,low dose,6,8,16,0.69

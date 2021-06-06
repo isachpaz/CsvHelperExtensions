@@ -1,0 +1,2 @@
+Patient Id;Study;FollowUpTime(Months);Fractions;TotalPhysicalDose(Gy);Local Control Probability
+1;high dose;12;1;30;0.88
