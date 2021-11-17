@@ -78,6 +78,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\CTC_Prostata_GU_Early_v1.csv" />
     <None Include="Resources\testdata_multi_records.csv" />
     <None Include="Resources\testdata_semicolon.csv" />
     <None Include="Resources\treatment_data.csv" />

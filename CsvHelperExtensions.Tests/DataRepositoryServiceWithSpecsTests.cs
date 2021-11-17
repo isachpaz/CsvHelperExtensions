@@ -12,7 +12,7 @@ namespace CsvHelperExtensions.Tests
        [SetUp]
         public void SetUp()
         {
-            _repositoryService = DataRepositoryService<TreatmentItem, TreatmentItemMapper>.FromCSV(Resource.testdata_multi_records);
+            _repositoryService = DataRepositoryService<TreatmentItem, TreatmentItemMapper>.FromText(Resource.testdata_multi_records);
         }
 
         [Test]

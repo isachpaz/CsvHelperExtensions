@@ -18,7 +18,7 @@ namespace CsvHelperExtensions.Tests
         public void With_Empty_CsvData_Test()
         {
             var repoService = DataRepositoryService<TreatmentItem, TreatmentItemMapper>
-                .FromCSV("");
+                .FromText("");
 
             Assert.AreEqual(0, repoService.GetAll().ToList().Count);
         }
@@ -27,7 +27,7 @@ namespace CsvHelperExtensions.Tests
         public void CSV_Delimiter_Comma_With_One_Record_Test()
         {
             var repoService = DataRepositoryService<TreatmentItem, TreatmentItemMapper>
-                .FromCSV(Resource.treatment_data);
+                .FromText(Resource.treatment_data);
 
             var firstItem = repoService.GetAll().FirstOrDefault();
             Assert.AreEqual("1",firstItem?.PatientId);
@@ -48,7 +48,7 @@ namespace CsvHelperExtensions.Tests
             };
 
             var repoService = DataRepositoryService<TreatmentItem, TreatmentItemMapper>
-                .FromCSV(Resource.testdata_semicolon, config);
+                .FromText(Resource.testdata_semicolon, config);
 
             var firstItem = repoService.GetAll().FirstOrDefault();
             Assert.AreEqual("1",firstItem?.PatientId);

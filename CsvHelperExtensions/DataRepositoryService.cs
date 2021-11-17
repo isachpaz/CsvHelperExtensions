@@ -24,13 +24,13 @@ namespace CsvHelperExtensions
         public DataRepositoryService(List<T> items) => this._items = items;
        
         public static DataRepositoryService<T, TM> FromCSVFile(
-          string csvFileName)
+          FileInfo csvFileName, CsvConfiguration csvConfiguration = null)
         {
             DataRepositoryService<T, TM> DataRepositoryService = new DataRepositoryService<T, TM>();
-            return !File.Exists(csvFileName) ? DataRepositoryService : DataRepositoryService<T, TM>.FromCSV(File.ReadAllText(csvFileName));
+            return !File.Exists(csvFileName.FullName) ? DataRepositoryService : DataRepositoryService<T, TM>.FromText(File.ReadAllText(csvFileName.FullName), csvConfiguration);
         }
 
-        public static DataRepositoryService<T, TM> FromCSV(string csvData, CsvConfiguration csvConfiguration = null)
+        public static DataRepositoryService<T, TM> FromText(string csvData, CsvConfiguration csvConfiguration = null)
         {
             DataRepositoryService<T, TM> dataRepositoryService = new DataRepositoryService<T, TM>();
             if (string.IsNullOrEmpty(csvData))

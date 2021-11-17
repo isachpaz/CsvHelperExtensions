@@ -2,9 +2,9 @@
 <package >
 	<metadata>
 		<id>csvHelperExtensionsGeneric</id>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<title>csvHelper Extensions</title>
-		<authors>Ilias Sachpazidis</authors>
+		<authors>Dr. Ilias Sachpazidis</authors>
 		<owners>Dr. Ilias Sachpazidis</owners>
 		<projectUrl>https://github.com/isachpaz/CsvHelperExtensions</projectUrl>
 		<license type="file">LICENSE.txt</license>
@@ -12,9 +12,13 @@
 		<description>csvHelper Extensions</description>
 		<releaseNotes>
 
+			csvHelperExtensions 1.0.2:
+			- DataRepositoryService.FromText() added.
+			- DataRepositoryService.FromCSVFile(FileInfo csvFileName) signature changed.
+
 			csvHelperExtensions 1.0.1:
 			- DataRepositoryService generic implementation with ISpecification support
-        
+
 		</releaseNotes>
 		<copyright>Copyright 2020-2021 (c) Dr. Ilias Sachpazidis</copyright>
 		<tags></tags>
